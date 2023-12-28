@@ -1,25 +1,24 @@
 #pragma once
-
 #include <Windows.h>
 
 #define DEFAULT_SCREEN_WIDTH (120)
 #define DEFAULT_SCREEN_HEIGHT (40)
 
-class ConsoleController
+static class ConsoleController
 {
 public:
-	ConsoleController();
-	ConsoleController(int width, int height);
-	ConsoleController(ConsoleController& exemp);
-	~ConsoleController();
+	static const int nScreenWidth = DEFAULT_SCREEN_WIDTH;
+	static const int nScreenHeight = DEFAULT_SCREEN_HEIGHT;
+	static wchar_t* screen;
 
-	void UpdateFrame();
+	/*ConsoleController();
+	ConsoleController(int width, int height);
+	ConsoleController(ConsoleController& exemp);*/
+	//~ConsoleController();
+
+	//void UpdateFrame();
 	
 private:
-	int nScreenWidth;
-	int nScreenHeight;
-
-	wchar_t* screen;
 	HANDLE hConsole;
 	DWORD dwBytesWritten;
 };

@@ -1,14 +1,12 @@
-
 #include "RayCasting.h"
 
 int main(int argc, char* argv) {
-	ConsoleController _Console;
-	MapController _Map;
+	//ConsoleController _Console;
+	//MapController _Map;
+	Raycasting raycasting;
 
-	while (true) {
-		if (GetAsyncKeyState('W') & 0x8000 || GetAsyncKeyState('w') & 0x8000)
-
-	}
+	raycasting.Raycast();
+	
 
 	return 0;
 }

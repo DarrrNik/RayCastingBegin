@@ -6,15 +6,17 @@
 #define DEFAULT_MAP_WIDTH (16)
 #define DEFAULT_MAP_HEIGHT (16)
 
-class MapController
+static class MapController
 {
 public:
-	MapController();
+	static int nMapWidth;
+	static int nMapHeight;
+	static std::string buf;
+
+	/*MapController();
 	MapController(std::string fileName);
-	MapController(MapController& exemp);
+	MapController(MapController& exemp);*/
 private:
-	int nMapWidth;
-	int nMapHeight;
-	std::string buf;
+	
 };
 
