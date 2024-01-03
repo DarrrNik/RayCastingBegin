@@ -7,18 +7,18 @@
 class ConsoleController
 {
 public:
-	static const int nScreenWidth = DEFAULT_SCREEN_WIDTH;
-	static const int nScreenHeight = DEFAULT_SCREEN_HEIGHT;
-	static wchar_t* screen;
+	static const int nScreenWidth;
+	static const int nScreenHeight;
+	static WCHAR* screen;
+	static HANDLE hConsole;
+	static DWORD dwBytesWritten;
 
 	ConsoleController();
 	ConsoleController(int width, int height);
 	ConsoleController(ConsoleController& exemp);
 	~ConsoleController();
 
-	void UpdateFrame();
+	static void UpdateFrame();
 	
 private:
-	HANDLE hConsole;
-	DWORD dwBytesWritten;
 };

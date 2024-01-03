@@ -2,8 +2,8 @@
 
 Player::Player()
 {
-	x = 8.0;
-	y = 8.0;
+	x = 7.0;
+	y = 7.0;
 	viewAngle = 0;
 	FOV = DEFAULT_FOV;
 	viewRadius = DEFAULT_VIEW_RADIUS;

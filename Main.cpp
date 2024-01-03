@@ -5,7 +5,9 @@ int main(int argc, char* argv) {
 	MapController _Map;
 	Raycasting raycasting;
 
+	
 	raycasting.Raycast();
+	
 	
 
 	return 0;
